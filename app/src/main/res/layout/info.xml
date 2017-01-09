@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#e0e0d1"
+    android:weightSum="8">
+<TextView
+    android:id="@+id/infoText"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    />
+    <Button
+        android:layout_toRightOf="@id/infoText"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="34px"
+        android:text="X"
+        android:onClick="dismissPopup"
+        />
+</RelativeLayout>
+

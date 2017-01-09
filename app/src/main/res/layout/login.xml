@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:onClick="login"
+            />
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/RegisterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:onClick="register"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btns">
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="60dp"
+        style="@style/Inputs"
+        android:layout_marginTop="6dp"
+        />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:text="\?"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/passwordInfoBtn"
+            android:onClick="showPasswordInfo"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/passwordLayout"
+        >
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        style="@style/Inputs"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="6dp"
+        />
+    <Button
+        android:id="@+id/usernameInfoBtn"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:text="\?"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:onClick="showUsernameInfo"
+       />
+</RelativeLayout>
+
+</RelativeLayout>
